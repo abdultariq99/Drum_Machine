@@ -1,38 +1,119 @@
-.App {
+body,
+html {
+  height: 100vh;
+  background-color: #6883bc;
+  margin: 0px;
+  padding: 0px;
+}
+
+.credit {
+  width: 100%;
   text-align: center;
+  margin-top: 15px;
+  font-size: 0.8em;
+  color: white;
+  word-spacing: 1px;
+  font-family: "Raleway", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Drumbox Style*/
+.drumbox {
+  height: 300px;
+  width: 600px;
+  background-color: #8a307f;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 5px 7px 5px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Keypad Style*/
+.pad {
+  width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.col {
+  width: 95px;
+  margin: 4px;
+  height: 80px;
+  background-color: #79a7d3;
+  border: 1px solid black;
+  color: black;
+  font-family: Russo One;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 7px;
+  box-shadow: black 3px 3px 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.col:active {
+  background-color: #6883bc;
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Control Panel Style*/
+.control-panel {
+  height: 100%;
+  margin-right: 50px;
+  color: black;
+}
+
+.panel-item {
+  font-family: Russo One;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: black;
+  outline: none;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #6883bc;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.selector {
+  height: 21px;
+  width: 50px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.inner-selector {
+  height: 100%;
+  width: 22px;
+  background-color: #6883bc;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.display {
+  height: 50px;
+  width: 170px;
+  padding: 15px;
+  background-color: #79a7d3;
+  color: #8a307f;
+  border-radius: 5px;
+  font-family: "Silkscreen", sans-serif;
+}
+
+input {
+  display: block;
 }
